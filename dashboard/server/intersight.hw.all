@@ -1,0 +1,55 @@
+{
+    "title": "Hardware Collection",
+    "folder": "${FOLDER}",
+    "uid": "hw-${NAME}",
+    "panels": [
+        {
+            "ipanel": "intersight.hw.cpu:gauge"
+        },
+        {
+            "ipanel": "intersight.hw.power:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.p1:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.p2:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.front:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.top:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.middle:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.bottom:stat"
+        },
+        {
+            "ipanel": "intersight.hw.cpu:ts"
+        },
+        {
+            "ipanel": "intersight.hw.power:ts"
+        },
+        {
+            "ipanel": "intersight.hw.temp.p1:ts"
+        },
+        {
+            "ipanel": "intersight.hw.temp.p2:ts"
+        },
+        {
+            "ipanel": "intersight.hw.temp.front:ts"
+        },
+        {
+            "ipanel": "intersight.hw.temp.top:ts"
+        },
+        {
+            "ipanel": "intersight.hw.temp.middle:ts"
+        },
+        {
+            "ipanel": "intersight.hw.temp.bottom:ts"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+[[tspollers]]
+name = "hw_temp_front_avg"
+datasource = "PhysicalEntities"
+dimensions = []
+filter = { type = "and", fields = [{type = "selector", dimension = "instrument.name", value = "hw.temperature"}, {type = "selector", dimension = "hw.temperature.sensor.name", value = "TEMP_FRONT"}, {type = "selector", dimension = "name", value = "TEMP_FRONT"}, {type = "selector", dimension = "intersight.asset.device_registration.moid", value = "${DEVICE_ID}"}]}
+aggregations = [{type = "longSum", name = "count", fieldName = "hw.temperature_count"}, {type = "doubleSum", name = "hw.temperature-Sum", fieldName = "hw.temperature"}]
+post_aggregations = [{"type" = "expression", "name" = "intersight.hw.temp.front.avg", "expression" = "(\"hw.temperature-Sum\" / \"count\")"}]
+field_names = ["intersight.hw.temp.front.avg"]
+otel_dimension_to_attribute_map = { }
+otel_attributes = { ${SCOPE} }
+interval = 60
+
+[[tspollers]]
+name = "hw_temp_front_min"
+datasource = "PhysicalEntities"
+dimensions = []
+filter = { type = "and", fields = [{type = "selector", dimension = "instrument.name", value = "hw.temperature"}, {type = "selector", dimension = "hw.temperature.sensor.name", value = "TEMP_FRONT"}, {type = "selector", dimension = "name", value = "TEMP_FRONT"}, {type = "selector", dimension = "intersight.asset.device_registration.moid", value = "${DEVICE_ID}"}]}
+aggregations = [{type = "doubleMin", name = "intersight.hw.temp.front.min", fieldName = "hw.temperature_min"}]
+post_aggregations = []
+field_names = ["intersight.hw.temp.front.min"]
+otel_dimension_to_attribute_map = { }
+otel_attributes = { ${SCOPE} }
+interval = 60
+
+[[tspollers]]
+name = "hw_temp_front_max"
+datasource = "PhysicalEntities"
+dimensions = []
+filter = { type = "and", fields = [{type = "selector", dimension = "instrument.name", value = "hw.temperature"}, {type = "selector", dimension = "hw.temperature.sensor.name", value = "TEMP_FRONT"}, {type = "selector", dimension = "name", value = "TEMP_FRONT"}, {type = "selector", dimension = "intersight.asset.device_registration.moid", value = "${DEVICE_ID}"}]}
+aggregations = [{type = "doubleMax", name = "intersight.hw.temp.front.max", fieldName = "hw.temperature_max"}]
+post_aggregations = []
+field_names = ["intersight.hw.temp.front.max"]
+otel_dimension_to_attribute_map = { }
+otel_attributes = { ${SCOPE} }
+interval = 60

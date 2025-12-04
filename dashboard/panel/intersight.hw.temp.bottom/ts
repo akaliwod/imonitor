@@ -1,0 +1,134 @@
+{
+    "title": "Temp Bottom [C]",
+    "type": "timeseries",
+    "datasource": {
+        "type": "prometheus",
+        "uid": "${PROMETHEUS}"
+    },
+    "fieldConfig": {
+        "defaults": {
+            "color": {
+                "mode": "palette-classic"
+            },
+            "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                    "legend": false,
+                    "tooltip": false,
+                    "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                    "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                    "group": "A",
+                    "mode": "none"
+                },
+                "thresholdsStyle": {
+                    "mode": "off"
+                }
+            },
+            "mappings": [],
+            "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                    {
+                        "color": "green",
+                        "value": 0
+                    },
+                    {
+                        "color": "red",
+                        "value": 80
+                    }
+                ]
+            },
+            "unit": "none"
+        },
+        "overrides": []
+    },
+    "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+    },
+    "options": {
+        "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+        },
+        "tooltip": {
+            "hideZeros": false,
+            "mode": "single",
+            "sort": "none"
+        }
+    },
+    "targets": [
+        {
+            "datasource": {
+                "type": "prometheus",
+                "uid": "${PROMETHEUS}"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "expr": "intersight_hw_temp_bottom_min{${SCOPE}}",
+            "fullMetaSearch": false,
+            "hide": false,
+            "includeNullMetadata": true,
+            "instant": false,
+            "legendFormat": "Min",
+            "range": true,
+            "refId": "A",
+            "useBackend": false
+        },
+        {
+            "datasource": {
+                "type": "prometheus",
+                "uid": "${PROMETHEUS}"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "expr": "intersight_hw_temp_bottom_avg{${SCOPE}}",
+            "fullMetaSearch": false,
+            "includeNullMetadata": true,
+            "legendFormat": "Avg",
+            "range": true,
+            "refId": "B",
+            "useBackend": false
+        },
+        {
+            "datasource": {
+                "type": "prometheus",
+                "uid": "${PROMETHEUS}"
+            },
+            "disableTextWrap": false,
+            "editorMode": "builder",
+            "expr": "intersight_hw_temp_bottom_max{${SCOPE}}",
+            "fullMetaSearch": false,
+            "hide": false,
+            "includeNullMetadata": true,
+            "instant": false,
+            "legendFormat": "Max",
+            "range": true,
+            "refId": "C",
+            "useBackend": false
+        }
+    ]
+}

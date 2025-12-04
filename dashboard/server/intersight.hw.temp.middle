@@ -1,0 +1,13 @@
+{
+    "title": "Temperature Sensor Middle",
+    "folder": "${FOLDER}",
+    "uid": "hw-temp-middle-${NAME}",
+    "panels": [
+        {
+            "ipanel": "intersight.hw.temp.middle:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.middle:ts"
+        }
+    ]
+}

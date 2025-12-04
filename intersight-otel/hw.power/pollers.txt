@@ -1,0 +1,35 @@
+[[tspollers]]
+name = "hw_power_avg"
+datasource = "PhysicalEntities"
+dimensions = []
+filter = { type = "and", fields = [{type = "selector", dimension = "instrument.name", value = "hw.host"}, {type = "selector", dimension = "intersight.asset.device_registration.moid", value = "${DEVICE_ID}"}]}
+aggregations = [{type = "longSum", name = "count", fieldName = "hw.host.power_count"}, {type = "doubleSum", name = "hw.host.power-Sum", fieldName = "hw.host.power"}]
+post_aggregations = [{"type" = "expression", "name" = "intersight.hw.power.avg", "expression" = "(\"hw.host.power-Sum\" / \"count\")"}]
+field_names = ["intersight.hw.power.avg"]
+otel_dimension_to_attribute_map = { }
+otel_attributes = { ${SCOPE} }
+interval = 60
+
+[[tspollers]]
+name = "hw_power_min"
+datasource = "PhysicalEntities"
+dimensions = []
+filter = { type = "and", fields = [{type = "selector", dimension = "instrument.name", value = "hw.host"}, {type = "selector", dimension = "intersight.asset.device_registration.moid", value = "${DEVICE_ID}"}]}
+aggregations = [{type = "doubleMin", name = "intersight.hw.power.min", fieldName = "hw.host.power_min"}]
+post_aggregations = []
+field_names = ["intersight.hw.power.min"]
+otel_dimension_to_attribute_map = { }
+otel_attributes = { ${SCOPE} }
+interval = 60
+
+[[tspollers]]
+name = "hw_power_max"
+datasource = "PhysicalEntities"
+dimensions = []
+filter = { type = "and", fields = [{type = "selector", dimension = "instrument.name", value = "hw.host"}, {type = "selector", dimension = "intersight.asset.device_registration.moid", value = "${DEVICE_ID}"}]}
+aggregations = [{type = "doubleMax", name = "intersight.hw.power.max", fieldName = "hw.host.power_min"}]
+post_aggregations = []
+field_names = ["intersight.hw.power.max"]
+otel_dimension_to_attribute_map = { }
+otel_attributes = { ${SCOPE} }
+interval = 60

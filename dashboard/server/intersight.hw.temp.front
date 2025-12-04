@@ -1,0 +1,13 @@
+{
+    "title": "Temperature Sensor Front",
+    "folder": "${FOLDER}",
+    "uid": "hw-temp-front-${NAME}",
+    "panels": [
+        {
+            "ipanel": "intersight.hw.temp.front:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.front:ts"
+        }
+    ]
+}

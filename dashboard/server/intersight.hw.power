@@ -1,0 +1,13 @@
+{
+    "title": "Host Power Utilization",
+    "folder": "${FOLDER}",
+    "uid": "hw-power-utilization-${NAME}",
+    "panels": [
+        {
+            "ipanel": "intersight.hw.power:stat"
+        },
+        {
+            "ipanel": "intersight.hw.power:ts"
+        }
+    ]
+}

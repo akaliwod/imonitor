@@ -1,0 +1,13 @@
+{
+    "title": "Temperature Sensor Bottom",
+    "folder": "${FOLDER}",
+    "uid": "hw-temp-bottom-${NAME}",
+    "panels": [
+        {
+            "ipanel": "intersight.hw.temp.bottom:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.bottom:ts"
+        }
+    ]
+}

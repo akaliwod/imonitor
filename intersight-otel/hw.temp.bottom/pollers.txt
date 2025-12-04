@@ -1,0 +1,35 @@
+[[tspollers]]
+name = "hw_temp_bottom_avg"
+datasource = "PhysicalEntities"
+dimensions = []
+filter = { type = "and", fields = [{type = "selector", dimension = "instrument.name", value = "hw.temperature"}, {type = "selector", dimension = "hw.temperature.sensor.name", value = "TEMP_REAR_BOT"}, {type = "selector", dimension = "name", value = "TEMP_REAR_BOT"}, {type = "selector", dimension = "intersight.asset.device_registration.moid", value = "${DEVICE_ID}"}]}
+aggregations = [{type = "longSum", name = "count", fieldName = "hw.temperature_count"}, {type = "doubleSum", name = "hw.temperature-Sum", fieldName = "hw.temperature"}]
+post_aggregations = [{"type" = "expression", "name" = "intersight.hw.temp.bottom.avg", "expression" = "(\"hw.temperature-Sum\" / \"count\")"}]
+field_names = ["intersight.hw.temp.bottom.avg"]
+otel_dimension_to_attribute_map = { }
+otel_attributes = { ${SCOPE} }
+interval = 60
+
+[[tspollers]]
+name = "hw_temp_bottom_min"
+datasource = "PhysicalEntities"
+dimensions = []
+filter = { type = "and", fields = [{type = "selector", dimension = "instrument.name", value = "hw.temperature"}, {type = "selector", dimension = "hw.temperature.sensor.name", value = "TEMP_REAR_BOT"}, {type = "selector", dimension = "name", value = "TEMP_REAR_BOT"}, {type = "selector", dimension = "intersight.asset.device_registration.moid", value = "${DEVICE_ID}"}]}
+aggregations = [{type = "doubleMin", name = "intersight.hw.temp.bottom.min", fieldName = "hw.temperature_min"}]
+post_aggregations = []
+field_names = ["intersight.hw.temp.bottom.min"]
+otel_dimension_to_attribute_map = { }
+otel_attributes = { ${SCOPE} }
+interval = 60
+
+[[tspollers]]
+name = "hw_temp_bottom_max"
+datasource = "PhysicalEntities"
+dimensions = []
+filter = { type = "and", fields = [{type = "selector", dimension = "instrument.name", value = "hw.temperature"}, {type = "selector", dimension = "hw.temperature.sensor.name", value = "TEMP_REAR_BOT"}, {type = "selector", dimension = "name", value = "TEMP_REAR_BOT"}, {type = "selector", dimension = "intersight.asset.device_registration.moid", value = "${DEVICE_ID}"}]}
+aggregations = [{type = "doubleMax", name = "intersight.hw.temp.bottom.max", fieldName = "hw.temperature_max"}]
+post_aggregations = []
+field_names = ["intersight.hw.temp.bottom.max"]
+otel_dimension_to_attribute_map = { }
+otel_attributes = { ${SCOPE} }
+interval = 60

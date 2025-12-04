@@ -1,0 +1,13 @@
+{
+    "title": "Temperature Sensor Top",
+    "folder": "${FOLDER}",
+    "uid": "hw-temp-top-${NAME}",
+    "panels": [
+        {
+            "ipanel": "intersight.hw.temp.top:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.top:ts"
+        }
+    ]
+}

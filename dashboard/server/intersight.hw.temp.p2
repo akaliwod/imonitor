@@ -1,0 +1,13 @@
+{
+    "title": "Temperature Sensor P2",
+    "folder": "${FOLDER}",
+    "uid": "hw-temp-p2-${NAME}",
+    "panels": [
+        {
+            "ipanel": "intersight.hw.temp.p2:stat"
+        },
+        {
+            "ipanel": "intersight.hw.temp.p2:ts"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Hardware CPU Utilization",
+    "folder": "${FOLDER}",
+    "uid": "hw-cpu-utilization-${NAME}",
+    "panels": [
+        {
+            "ipanel": "intersight.hw.cpu:gauge"
+        },
+        {
+            "ipanel": "intersight.hw.cpu:ts"
+        }
+    ]
+}
