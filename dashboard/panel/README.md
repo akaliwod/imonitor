@@ -42,7 +42,7 @@ The size parameters (h/w) are used in the generated dashboard while location par
 ## Panels Library
 
 Name | Metric | Type | Template | Example
---- | --- | --- | ---
+--- | --- | --- | --- | ---
 intersight.hw.cpu | CPU utilization | gauge | [Link](./intersight.hw.cpu/gauge) | [Link](../image/intersight_hw_cpu_gauge.png)
 intersight.hw.cpu | CPU utilization | time series | [Link](./intersight.hw.cpu/ts) | [Link](../image/intersight_hw_cpu_ts.png)
 intersight.hw.power | Host Power | stat | [Link](./intersight.hw.power/stat) | [Link](../image/intersight_hw_power_stat.png)
