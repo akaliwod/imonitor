@@ -57,7 +57,7 @@ aggregations = [{type = "longSum", name = "count", fieldName = "hw.cpu.utilizati
 post_aggregations = [{"type" = "expression", "name" = "intersight.hw.cpu.avg", "expression" = "(\"hw.cpu.utilization_c0-Sum\" / \"count\")"}]
 field_names = ["intersight.hw.cpu.avg"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
 interval = 60
 
 [[tspollers]]
@@ -69,7 +69,7 @@ aggregations = [{type = "doubleMin", name = "intersight.hw.cpu.min", fieldName =
 post_aggregations = []
 field_names = ["intersight.hw.cpu.min"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
 interval = 60
 
 [[tspollers]]
@@ -81,7 +81,7 @@ aggregations = [{type = "doubleMax", name = "intersight.hw.cpu.max", fieldName =
 post_aggregations = []
 field_names = ["intersight.hw.cpu.max"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
 interval = 60
 [[tspollers]]
 name = "hw_cpu_avg"
@@ -92,7 +92,7 @@ aggregations = [{type = "longSum", name = "count", fieldName = "hw.cpu.utilizati
 post_aggregations = [{"type" = "expression", "name" = "intersight.hw.cpu.avg", "expression" = "(\"hw.cpu.utilization_c0-Sum\" / \"count\")"}]
 field_names = ["intersight.hw.cpu.avg"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
 interval = 60
 
 [[tspollers]]
@@ -104,7 +104,7 @@ aggregations = [{type = "doubleMin", name = "intersight.hw.cpu.min", fieldName =
 post_aggregations = []
 field_names = ["intersight.hw.cpu.min"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
 interval = 60
 
 [[tspollers]]
@@ -116,7 +116,7 @@ aggregations = [{type = "doubleMax", name = "intersight.hw.cpu.max", fieldName =
 post_aggregations = []
 field_names = ["intersight.hw.cpu.max"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
 interval = 60
 [[tspollers]]
 name = "hw_cpu_avg"
@@ -127,7 +127,7 @@ aggregations = [{type = "longSum", name = "count", fieldName = "hw.cpu.utilizati
 post_aggregations = [{"type" = "expression", "name" = "intersight.hw.cpu.avg", "expression" = "(\"hw.cpu.utilization_c0-Sum\" / \"count\")"}]
 field_names = ["intersight.hw.cpu.avg"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
 interval = 60
 
 [[tspollers]]
@@ -139,7 +139,7 @@ aggregations = [{type = "doubleMin", name = "intersight.hw.cpu.min", fieldName =
 post_aggregations = []
 field_names = ["intersight.hw.cpu.min"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
 interval = 60
 
 [[tspollers]]
@@ -151,7 +151,7 @@ aggregations = [{type = "doubleMax", name = "intersight.hw.cpu.max", fieldName =
 post_aggregations = []
 field_names = ["intersight.hw.cpu.max"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
 interval = 60
 ~~~
 
@@ -197,7 +197,7 @@ data:
     post_aggregations = [{"type" = "expression", "name" = "intersight.hw.cpu.avg", "expression" = "(\"hw.cpu.utilization_c0-Sum\" / \"count\")"}]
     field_names = ["intersight.hw.cpu.avg"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+    otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
     interval = 60
 
     [[tspollers]]
@@ -209,7 +209,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.cpu.min"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+    otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
     interval = 60
 
     [[tspollers]]
@@ -221,7 +221,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.cpu.max"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+    otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
     interval = 60
     [[tspollers]]
     name = "hw_cpu_avg"
@@ -232,7 +232,7 @@ data:
     post_aggregations = [{"type" = "expression", "name" = "intersight.hw.cpu.avg", "expression" = "(\"hw.cpu.utilization_c0-Sum\" / \"count\")"}]
     field_names = ["intersight.hw.cpu.avg"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+    otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
     interval = 60
 
     [[tspollers]]
@@ -244,7 +244,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.cpu.min"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+    otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
     interval = 60
 
     [[tspollers]]
@@ -256,7 +256,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.cpu.max"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+    otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
     interval = 60
     [[tspollers]]
     name = "hw_cpu_avg"
@@ -267,7 +267,7 @@ data:
     post_aggregations = [{"type" = "expression", "name" = "intersight.hw.cpu.avg", "expression" = "(\"hw.cpu.utilization_c0-Sum\" / \"count\")"}]
     field_names = ["intersight.hw.cpu.avg"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+    otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
     interval = 60
 
     [[tspollers]]
@@ -279,7 +279,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.cpu.min"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+    otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
     interval = 60
 
     [[tspollers]]
@@ -291,7 +291,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.cpu.max"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+    otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
     interval = 60
 kind: ConfigMap
 metadata:

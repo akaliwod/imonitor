@@ -60,7 +60,7 @@ aggregations = [{type = "longSum", name = "count", fieldName = "hw.temperature_c
 post_aggregations = [{"type" = "expression", "name" = "intersight.hw.temp.p1.avg", "expression" = "(\"hw.temperature-Sum\" / \"count\")"}]
 field_names = ["intersight.hw.temp.p1.avg"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
 interval = 60
 
 [[tspollers]]
@@ -72,7 +72,7 @@ aggregations = [{type = "doubleMin", name = "intersight.hw.temp.p1.min", fieldNa
 post_aggregations = []
 field_names = ["intersight.hw.temp.p1.min"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
 interval = 60
 
 [[tspollers]]
@@ -84,7 +84,7 @@ aggregations = [{type = "doubleMax", name = "intersight.hw.temp.p1.max", fieldNa
 post_aggregations = []
 field_names = ["intersight.hw.temp.p1.max"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
 interval = 60
 [[tspollers]]
 name = "hw_temp_p1_avg"
@@ -95,7 +95,7 @@ aggregations = [{type = "longSum", name = "count", fieldName = "hw.temperature_c
 post_aggregations = [{"type" = "expression", "name" = "intersight.hw.temp.p1.avg", "expression" = "(\"hw.temperature-Sum\" / \"count\")"}]
 field_names = ["intersight.hw.temp.p1.avg"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
 interval = 60
 
 [[tspollers]]
@@ -107,7 +107,7 @@ aggregations = [{type = "doubleMin", name = "intersight.hw.temp.p1.min", fieldNa
 post_aggregations = []
 field_names = ["intersight.hw.temp.p1.min"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
 interval = 60
 
 [[tspollers]]
@@ -119,7 +119,7 @@ aggregations = [{type = "doubleMax", name = "intersight.hw.temp.p1.max", fieldNa
 post_aggregations = []
 field_names = ["intersight.hw.temp.p1.max"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
 interval = 60
 [[tspollers]]
 name = "hw_temp_p1_avg"
@@ -130,7 +130,7 @@ aggregations = [{type = "longSum", name = "count", fieldName = "hw.temperature_c
 post_aggregations = [{"type" = "expression", "name" = "intersight.hw.temp.p1.avg", "expression" = "(\"hw.temperature-Sum\" / \"count\")"}]
 field_names = ["intersight.hw.temp.p1.avg"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
 interval = 60
 
 [[tspollers]]
@@ -142,7 +142,7 @@ aggregations = [{type = "doubleMin", name = "intersight.hw.temp.p1.min", fieldNa
 post_aggregations = []
 field_names = ["intersight.hw.temp.p1.min"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
 interval = 60
 
 [[tspollers]]
@@ -154,7 +154,7 @@ aggregations = [{type = "doubleMax", name = "intersight.hw.temp.p1.max", fieldNa
 post_aggregations = []
 field_names = ["intersight.hw.temp.p1.max"]
 otel_dimension_to_attribute_map = { }
-otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
 interval = 60
 ~~~
 
@@ -200,7 +200,7 @@ data:
     post_aggregations = [{"type" = "expression", "name" = "intersight.hw.temp.p1.avg", "expression" = "(\"hw.temperature-Sum\" / \"count\")"}]
     field_names = ["intersight.hw.temp.p1.avg"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+    otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
     interval = 60
 
     [[tspollers]]
@@ -212,7 +212,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.temp.p1.min"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+    otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
     interval = 60
 
     [[tspollers]]
@@ -224,7 +224,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.temp.p1.max"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server1", server-ip = "1010.10.21" }
+    otel_attributes = { server-name = "server1", server-ip = "10.10.10.21" }
     interval = 60
     [[tspollers]]
     name = "hw_temp_p1_avg"
@@ -235,7 +235,7 @@ data:
     post_aggregations = [{"type" = "expression", "name" = "intersight.hw.temp.p1.avg", "expression" = "(\"hw.temperature-Sum\" / \"count\")"}]
     field_names = ["intersight.hw.temp.p1.avg"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+    otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
     interval = 60
 
     [[tspollers]]
@@ -247,7 +247,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.temp.p1.min"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+    otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
     interval = 60
 
     [[tspollers]]
@@ -259,7 +259,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.temp.p1.max"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server2", server-ip = "1010.10.22" }
+    otel_attributes = { server-name = "server2", server-ip = "10.10.10.22" }
     interval = 60
     [[tspollers]]
     name = "hw_temp_p1_avg"
@@ -270,7 +270,7 @@ data:
     post_aggregations = [{"type" = "expression", "name" = "intersight.hw.temp.p1.avg", "expression" = "(\"hw.temperature-Sum\" / \"count\")"}]
     field_names = ["intersight.hw.temp.p1.avg"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+    otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
     interval = 60
 
     [[tspollers]]
@@ -282,7 +282,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.temp.p1.min"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+    otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
     interval = 60
 
     [[tspollers]]
@@ -294,7 +294,7 @@ data:
     post_aggregations = []
     field_names = ["intersight.hw.temp.p1.max"]
     otel_dimension_to_attribute_map = { }
-    otel_attributes = { server-name = "server3", server-ip = "1010.10.23" }
+    otel_attributes = { server-name = "server3", server-ip = "10.10.10.23" }
     interval = 60
 kind: ConfigMap
 metadata:
