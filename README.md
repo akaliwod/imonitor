@@ -3,7 +3,7 @@
 ## Overview
 
 Set of templates that can be used with iserver to easily define
-- Intersight metrics polled and exposed to Prometheus using [Intersight OpenTelemtry](./intersight-otel/README.md)
+- Intersight metrics polled and exposed to Prometheus using [Intersight OpenTelemetry](./intersight-otel/README.md)
 - Grafana [dashboard](./dashboard/README.md) examples visualizing collected Prometheus metrics
 
 ## Prerequisites
@@ -20,6 +20,6 @@ Set of templates that can be used with iserver to easily define
 - Step 2: create Dashboard from [template](./dashboard/README.md)
 - Step 3: enjoy the outcome
 
-![Dashboards](../image/dashboards.png)
+![Dashboards](./image/dashboards.png)
 
-![HW Collection](../image/hw_collection.png)
+![HW Collection](./image/hw_collection.png)
