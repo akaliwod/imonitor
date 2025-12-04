@@ -1439,7 +1439,7 @@ Completed tasks
 ```
 
 ```
-python.exe .\iserver.py get ocp iotel                                                                                                                                                                                     
+iserver get ocp iotel                                                                                                                                                                                     
    
 OpenShift Workflow - Intersight Open Telemetry (iotel) - Get instance
 =====================================================================
