@@ -27,7 +27,7 @@ File | Description | Example
 ## Expected Outcome
 
 ```
-# iserver set ocp grafana --cluster bm3 --mode dashboard --instance test --crd C:\kali\cisco\devel\imonitor\dashboard\server\ --scope server-name:outshift-ai-pod-1-3 --no-confirm
+# iserver set ocp grafana --cluster bm1 --mode dashboard --instance test --crd C:\tmp\imonitor\dashboard\server\ --scope server-name:my-server --no-confirm
 ```
 
 ![Dashboards](../../image/dashboards.png)

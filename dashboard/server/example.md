@@ -6,7 +6,7 @@
 OpenShift Workflow - Grafana Operator - Create Dashboard
 ========================================================
 
-OpenShift Cluster: bm3
+OpenShift Cluster: bm1
 Grafana instance: grafana-operator/test
 
 Collect resources

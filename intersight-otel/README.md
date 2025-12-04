@@ -4,7 +4,7 @@
 
 [intersight-otel tool](https://github.com/cgascoig/intersight-otel) makes Cisco Intersight API requests and generate OpenTelemetry metrics from the responses.
 
-![Architecture](../image/overview.png)
+![Architecture](../image/iotel.png)
 
 [iserver](https://github.com/datacenter/iserver/blob/main/doc/ocp/iotel/README.md) makes it easier to use and provides
 - intersight-otel deployment in OpenShift
