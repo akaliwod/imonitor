@@ -30,7 +30,7 @@ File | Description | Example
 # iserver set ocp grafana --cluster bm3 --mode dashboard --instance test --crd C:\kali\cisco\devel\imonitor\dashboard\server\ --scope server-name:outshift-ai-pod-1-3 --no-confirm
 ```
 
-[Dashboards](../../image/dashboards.png)
+![Dashboards](../../image/dashboards.png)
 
 Full [output](./example.md) reference
 
