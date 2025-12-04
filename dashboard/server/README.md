@@ -1,7 +1,7 @@
 ## Server Dashboards Library
 
 File | Description | Example
---- | --- | --- | ---
+--- | --- | --- 
 [intersight.hw.all](./intersight.hw.all) | All intersight metrics | [Link](../../image/intersight_hw_all_dashboard.png)
 [intersight.hw.cpu](./intersight.hw.cpu) | CPU metrics | [Link](../../image/intersight_hw_cpu_dashboard.png)
 [intersight.hw.power](./intersight.hw.power) | Power metrics | [Link](../../image/intersight_hw_power_dashboard.png)
@@ -10,6 +10,7 @@ File | Description | Example
 [intersight.hw.temp.middle](./intersight.hw.temp.middle) | Temperature rear middle metrics | [Link](../../image/intersight_hw_temp_middle_dashboard.png)
 [intersight.hw.temp.p1](./intersight.hw.temp.p1) | Temperature P1 metrics | [Link](../../image/intersight_hw_temp_p1_dashboard.png)
 [intersight.hw.temp.p2](./intersight.hw.temp.p2) | Temperature P2 metrics | [Link](../../image/intersight_hw_temp_p2_dashboard.png)
+[intersight.hw.temp.top](./intersight.hw.temp.top) | Temperature rear top metrics | [Link](../../image/intersight_hw_temp_top_dashboard.png)
 
 ## HowTo
 
